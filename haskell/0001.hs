@@ -11,6 +11,9 @@ sequ :: (Integer -> Bool) -> Integer -> [Integer]
 sequ func start =
     if func start then start : (sequ func (start + 1)) else sequ func (start + 1)
 
+result :: Integer
+result = foldl (+) 0 (takeWhile (< 1000) (sequ divByThreeOrFive 0))
+
 -- ghci
 -- :load 0001.hs
 -- divByThreeOrFive 3

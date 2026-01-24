@@ -5,11 +5,6 @@
 -- By considering the terms in the Fibonacci sequence whose values
 -- do not exceed four million, find the sum of the even-valued terms.
 
-evens :: [Integer] -> [Integer]
-evens [] = []
-evens [e] = []
-evens (_ : e : t) = e : (evens t)
-
 fib :: Integer -> Integer
 fib 1 = 1
 fib 2 = 2
@@ -18,9 +13,10 @@ fib n = fib (n - 1) + fib (n - 2)
 fibs :: Integer -> [Integer]
 fibs start = fib start : fibs (start + 1)
 
+result :: Integer
+result = foldl (+) 0 (filter even (takeWhile (< 4000000) (fibs 1)))
+
 -- :load 0002.hs
--- filter even [1, 2, 3, 4, 5, 6]
--- filter even [1, 2, 3, 4, 5, 6, 7]
 -- takeWhile (< 4000000) (fibs 1)
 -- filter even (takeWhile (< 4000000) (fibs 1))
 -- foldl (+) 0 (filter even (takeWhile (< 4000000) (fibs 1)))
