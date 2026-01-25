@@ -36,3 +36,17 @@ squareRoot n =
         iters = iterate newtonStep (squareRoot (div n lowerN) * lowerRoot)
         isRoot r = r ^! 2 <= n && n < (r + 1) ^! 2
     in ownHead $ dropWhile (not . isRoot) iters
+
+rangeUp :: Integer -> Integer -> Integer -> [Integer]
+rangeUp step start end = takeWhile (<=end) $ iterate (+step) start
+
+rangeDown :: Integer -> Integer -> Integer -> [Integer]
+rangeDown step start end =
+    let up = rangeUp step end start in
+        reverse up
+
+cartProd :: [a] -> [b] -> [(a, b)]
+cartProd xs ys = [(x, y) | x <- xs, y <- ys]
+
+cartProd2 :: [Integer] -> [Integer] -> [(Integer, Integer)]
+cartProd2 xs ys = [(x, y) | x <- xs, y <- ys, x >= y]
