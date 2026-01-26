@@ -4,12 +4,10 @@
 -- The sum of these multiples is 23.
 -- Find the sum of all the multiples of 3 or 5 below 1000.
 
+import Utils
+
 divByThreeOrFive :: Integer -> Bool
 divByThreeOrFive n = (mod n 3) == 0 || (mod n 5) == 0
-
-sequ :: (Integer -> Bool) -> Integer -> [Integer]
-sequ func start =
-    if func start then start : (sequ func (start + 1)) else sequ func (start + 1)
 
 result :: Integer
 result = foldl (+) 0 (takeWhile (< 1000) (sequ divByThreeOrFive 0))

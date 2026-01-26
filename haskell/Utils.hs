@@ -1,5 +1,9 @@
 module Utils where
 
+sequ :: (Integer -> Bool) -> Integer -> [Integer]
+sequ func start =
+    if func start then start : (sequ func (start + 1)) else sequ func (start + 1)
+
 evens :: [Integer] -> [Integer]
 evens [] = []
 evens [e] = []
@@ -50,3 +54,6 @@ cartProd xs ys = [(x, y) | x <- xs, y <- ys]
 
 cartProd2 :: [Integer] -> [Integer] -> [(Integer, Integer)]
 cartProd2 xs ys = [(x, y) | x <- xs, y <- ys, x >= y]
+
+allNums :: Integer -> [Integer]
+allNums start = start:(allNums (start + 1))
