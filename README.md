@@ -10,4 +10,7 @@ Solutions to Project Euler Challenges
 - [x] 0002 Even Fibonacci Numbers
 - [x] 0003 Largest Prime Factor
 - [x] 0004 Largest Palindrome Product
-- [ ] 0005 Smallest Multiple
+- [x] 0005 Smallest Multiple
+- [x] 0006 Sum Square Difference
+- [x] 0007 10001st Prime
+- [ ] 0008 Largest Product in a Series
