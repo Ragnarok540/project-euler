@@ -55,5 +55,8 @@ cartProd xs ys = [(x, y) | x <- xs, y <- ys]
 cartProd2 :: [Integer] -> [Integer] -> [(Integer, Integer)]
 cartProd2 xs ys = [(x, y) | x <- xs, y <- ys, x >= y]
 
+cartProd3 :: [Integer] -> [Integer] -> [(Integer, Integer)]
+cartProd3 xs ys = [(x, y) | x <- xs, y <- ys, x > y]
+
 allNums :: Integer -> [Integer]
 allNums start = start:(allNums (start + 1))

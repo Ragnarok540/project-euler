@@ -13,4 +13,6 @@ Solutions to Project Euler Challenges
 - [x] 0005 Smallest Multiple
 - [x] 0006 Sum Square Difference
 - [x] 0007 10001st Prime
-- [ ] 0008 Largest Product in a Series
+- [x] 0008 Largest Product in a Series
+- [x] 0009 Special Pythagorean Triplet
+- [ ] 0010 Summation of Primes
