@@ -15,4 +15,6 @@ Solutions to Project Euler Challenges
 - [x] 0007 10001st Prime
 - [x] 0008 Largest Product in a Series
 - [x] 0009 Special Pythagorean Triplet
-- [ ] 0010 Summation of Primes
+- [x] 0010 Summation of Primes
+- [x] 0011 Largest Product in a Grid
+- [ ] 0012 Highly Divisible Triangular Number

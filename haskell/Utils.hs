@@ -27,6 +27,9 @@ intSquareRoot n = aux n
 ownHead :: [a] -> a
 ownHead (h : _) = h
 
+ownTail :: [a] -> [a]
+ownTail (_ : t) = t
+
 (^!) :: Num a => a -> Int -> a
 (^!) x n = x ^ n
 
