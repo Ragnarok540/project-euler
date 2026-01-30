@@ -18,3 +18,6 @@ Solutions to Project Euler Challenges
 - [x] 0010 Summation of Primes
 - [x] 0011 Largest Product in a Grid
 - [ ] 0012 Highly Divisible Triangular Number
+- [x] 0013 Large Sum
+- [x] 0014 Longest Collatz Sequence
+- [ ] 0015 Lattice Paths
