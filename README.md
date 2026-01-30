@@ -2,6 +2,7 @@
 Solutions to Project Euler Challenges
 
 - https://projecteuler.net/
+- https://projecteuler.info/
 - https://github.com/lucky-bai/projecteuler-solutions
 
 ## Challenges
@@ -20,4 +21,6 @@ Solutions to Project Euler Challenges
 - [ ] 0012 Highly Divisible Triangular Number
 - [x] 0013 Large Sum
 - [x] 0014 Longest Collatz Sequence
-- [ ] 0015 Lattice Paths
+- [x] 0015 Lattice Paths
+- [x] 0016 Power Digit Sum
+- [ ] 0017 Number Letter Counts
