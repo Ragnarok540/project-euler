@@ -23,4 +23,5 @@ Solutions to Project Euler Challenges
 - [x] 0014 Longest Collatz Sequence
 - [x] 0015 Lattice Paths
 - [x] 0016 Power Digit Sum
-- [ ] 0017 Number Letter Counts
+- [x] 0017 Number Letter Counts
+- [ ] 0018 Maximum Path Sum I

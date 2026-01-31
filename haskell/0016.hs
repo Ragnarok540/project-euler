@@ -24,7 +24,7 @@ sumDigits num =
 result :: Integer
 result = sumDigits (2 ^ 1000)
 
--- :load 0011.hs
+-- :load 0016.hs
 -- digitToInt '5'
 -- sumDigits 2 ^ 1000
 -- 1366
