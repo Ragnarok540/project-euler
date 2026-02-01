@@ -24,4 +24,5 @@ Solutions to Project Euler Challenges
 - [x] 0015 Lattice Paths
 - [x] 0016 Power Digit Sum
 - [x] 0017 Number Letter Counts
-- [ ] 0018 Maximum Path Sum I
+- [x] 0018 Maximum Path Sum I
+- [ ] 0019 Counting Sundays

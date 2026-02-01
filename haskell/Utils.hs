@@ -63,3 +63,17 @@ cartProd3 xs ys = [(x, y) | x <- xs, y <- ys, x > y]
 
 allNums :: Integer -> [Integer]
 allNums start = start:(allNums (start + 1))
+
+-- triangle funcs
+
+-- getElem :: (Int, Int) -> Integer
+-- getElem (a, b) = triangle !! a !! b
+
+bellow :: (Int, Int) -> [(Int, Int)]
+bellow (a, b) = [(a + 1, b), (a + 1, b + 1)]
+
+above :: (Int, Int) -> [(Int, Int)]
+above (a, b) =
+    if b == 0 then [(a - 1, 0)] else
+    if a == b then [(a - 1, b - 1)] else
+    [(a - 1, b - 1), (a - 1, b)]
