@@ -77,3 +77,28 @@ above (a, b) =
     if b == 0 then [(a - 1, 0)] else
     if a == b then [(a - 1, b - 1)] else
     [(a - 1, b - 1), (a - 1, b)]
+
+factorial :: Integer -> Integer
+factorial num = foldl (*) 1 [1..num]
+
+choose :: Integer -> Integer -> Integer
+choose n k = div (factorial n) ((factorial k) * factorial (n - k))
+
+digitToInt :: Char -> Integer
+digitToInt digit =
+    case digit of
+        '0' -> 0
+        '1' -> 1
+        '2' -> 2
+        '3' -> 3
+        '4' -> 4
+        '5' -> 5
+        '6' -> 6
+        '7' -> 7
+        '8' -> 8
+        '9' -> 9
+
+sumDigits :: Integer -> Integer
+sumDigits num =
+    let nums = map digitToInt (show num) in
+        sum nums

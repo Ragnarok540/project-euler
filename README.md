@@ -25,4 +25,6 @@ Solutions to Project Euler Challenges
 - [x] 0016 Power Digit Sum
 - [x] 0017 Number Letter Counts
 - [x] 0018 Maximum Path Sum I
-- [ ] 0019 Counting Sundays
+- [x] 0019 Counting Sundays
+- [x] 0020 Factorial Digit Sum
+- [ ] 0021 Amicable Numbers

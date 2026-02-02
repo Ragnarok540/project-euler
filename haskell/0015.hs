@@ -6,11 +6,7 @@
 
 -- import 
 
-factorial :: Integer -> Integer
-factorial num = foldl (*) 1 [1..num]
-
-choose :: Integer -> Integer -> Integer
-choose n k = div (factorial n) ((factorial k) * factorial (n - k))
+import Utils
 
 latticePaths :: (Integer, Integer) -> Integer
 latticePaths (n, k) = choose (n + k) n
