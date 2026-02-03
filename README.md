@@ -28,4 +28,5 @@ Solutions to Project Euler Challenges
 - [x] 0019 Counting Sundays
 - [x] 0020 Factorial Digit Sum
 - [x] 0021 Amicable Numbers
-- [ ] 0022 Names Scores
+- [x] 0022 Names Scores
+- [ ] 0023 Non-Abundant Sums
