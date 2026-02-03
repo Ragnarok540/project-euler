@@ -27,4 +27,5 @@ Solutions to Project Euler Challenges
 - [x] 0018 Maximum Path Sum I
 - [x] 0019 Counting Sundays
 - [x] 0020 Factorial Digit Sum
-- [ ] 0021 Amicable Numbers
+- [x] 0021 Amicable Numbers
+- [ ] 0022 Names Scores

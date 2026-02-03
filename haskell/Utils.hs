@@ -64,6 +64,13 @@ cartProd3 xs ys = [(x, y) | x <- xs, y <- ys, x > y]
 allNums :: Integer -> [Integer]
 allNums start = start:(allNums (start + 1))
 
+divisors :: Integer -> [Integer]
+divisors num = divisorsAux num num where
+    divisorsAux div num =
+        if div == 1 then [1] else
+            if (mod num div) == 0 then div : divisorsAux (div - 1) num
+            else divisorsAux (div - 1) num
+
 -- triangle funcs
 
 -- getElem :: (Int, Int) -> Integer
