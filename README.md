@@ -30,3 +30,5 @@ Solutions to Project Euler Challenges
 - [x] 0021 Amicable Numbers
 - [x] 0022 Names Scores
 - [ ] 0023 Non-Abundant Sums
+- [x] 0024 Lexicographic Permutations
+- [ ] 0025 1000-digit Fibonacci Number

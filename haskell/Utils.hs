@@ -61,6 +61,9 @@ cartProd2 xs ys = [(x, y) | x <- xs, y <- ys, x >= y]
 cartProd3 :: [Integer] -> [Integer] -> [(Integer, Integer)]
 cartProd3 xs ys = [(x, y) | x <- xs, y <- ys, x > y]
 
+cartProd4 :: [Integer] -> [Integer] -> [(Integer, Integer)]
+cartProd4 xs ys = [(x, y) | x <- xs, y <- ys, x <= y]
+
 allNums :: Integer -> [Integer]
 allNums start = start:(allNums (start + 1))
 
@@ -70,6 +73,9 @@ divisors num = divisorsAux num num where
         if div == 1 then [1] else
             if (mod num div) == 0 then div : divisorsAux (div - 1) num
             else divisorsAux (div - 1) num
+
+properDivisorsSum :: Integer -> Integer
+properDivisorsSum num = sum (drop 1 (divisors num))
 
 -- triangle funcs
 
@@ -109,3 +115,10 @@ sumDigits :: Integer -> Integer
 sumDigits num =
     let nums = map digitToInt (show num) in
         sum nums
+
+removeDups :: Eq a => [a] -> [a]
+removeDups = rdHelper []
+    where rdHelper seen [] = seen
+          rdHelper seen (x:xs)
+              | x `elem` seen = rdHelper seen xs
+              | otherwise = rdHelper (seen ++ [x]) xs

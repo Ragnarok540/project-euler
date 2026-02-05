@@ -10,9 +10,6 @@
 
 import Utils
 
-properDivisorsSum :: Integer -> Integer
-properDivisorsSum num = sum (drop 1 (divisors num))
-
 findAmicable :: Integer -> Integer -> [(Integer, Integer)]
 findAmicable num limit =
     if num >= limit then [] else
