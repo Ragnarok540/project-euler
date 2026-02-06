@@ -31,4 +31,5 @@ Solutions to Project Euler Challenges
 - [x] 0022 Names Scores
 - [ ] 0023 Non-Abundant Sums
 - [x] 0024 Lexicographic Permutations
-- [ ] 0025 1000-digit Fibonacci Number
+- [x] 0025 1000-digit Fibonacci Number
+- [ ] 0026 Reciprocal Cycles
