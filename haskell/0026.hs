@@ -24,8 +24,8 @@ longDivision2 :: Integer -> Integer -> [Integer]
 longDivision2 dividend divisor =
     longDivisionAux dividend divisor [] where
         longDivisionAux dividend divisor pastDividends =
-            if elem dividend pastDividends then [] else
-            if dividend < divisor then longDivisionAux (dividend * 10) divisor pastDividends else
+            if elem dividend pastDividends then [0] else
+            if dividend < divisor then longDivisionAux (dividend * 10) divisor pastDividends else -- 0 : 
                 let d = div dividend divisor
                     r = rem dividend divisor in
                         if r == 0 then [d] else
@@ -45,4 +45,5 @@ result =
 -- longDivision2 1 6
 -- longDivision2 1 7
 -- map length $ map (longDivision2 1) [1..1000]
+-- 1/17 ???
 -- 983

@@ -10,7 +10,7 @@ evens [e] = []
 evens (_ : e : t) = e : (evens t)
 
 isPrime :: Integer -> Bool
-isPrime n = (abs n) > 1 && isNotDivisor 2 where
+isPrime n = if n < 2 then False else (abs n) > 1 && isNotDivisor 2 where
     isNotDivisor d = d * d > (abs n) || ((mod (abs n) d) /= 0 && isNotDivisor (d + 1)) 
 
 primes :: Integer -> [Integer]

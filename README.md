@@ -33,4 +33,5 @@ Solutions to Project Euler Challenges
 - [x] 0024 Lexicographic Permutations
 - [x] 0025 1000-digit Fibonacci Number
 - [x] 0026 Reciprocal Cycles
-- [ ] 0027 Quadratic Primes
+- [x] 0027 Quadratic Primes
+- [ ] 0028 Number Spiral Diagonals
