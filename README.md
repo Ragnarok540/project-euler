@@ -34,4 +34,5 @@ Solutions to Project Euler Challenges
 - [x] 0025 1000-digit Fibonacci Number
 - [x] 0026 Reciprocal Cycles
 - [x] 0027 Quadratic Primes
-- [ ] 0028 Number Spiral Diagonals
+- [x] 0028 Number Spiral Diagonals
+- [ ] 0029 Distinct Powers
