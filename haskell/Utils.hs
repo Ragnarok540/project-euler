@@ -134,3 +134,6 @@ memoized_fib =
         fib 0 = 0
         fib 1 = 1
         fib n = memoized_fib (n - 2) + memoized_fib (n - 1)
+
+intListToInt :: [Integer] -> Integer
+intListToInt ls = read $ concat $ map show ls :: Integer

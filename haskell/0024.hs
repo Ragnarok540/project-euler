@@ -8,12 +8,10 @@
 -- 4, 5, 6, 7, 8 and 9?
 
 import Data.List (permutations, sort)
+import Utils
 
 getNthPerm :: Ord a => [a] -> Int -> [a]
 getNthPerm ls nth = (sort $ permutations ls) !! nth
-
-intListToInt :: [Integer] -> Integer
-intListToInt ls = read $ concat $ map show ls :: Integer
 
 result :: Integer
 result = 

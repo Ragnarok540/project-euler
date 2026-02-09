@@ -35,4 +35,6 @@ Solutions to Project Euler Challenges
 - [x] 0026 Reciprocal Cycles
 - [x] 0027 Quadratic Primes
 - [x] 0028 Number Spiral Diagonals
-- [ ] 0029 Distinct Powers
+- [x] 0029 Distinct Powers
+- [x] 0030 Digit Fifth Powers
+- [ ] 0031 Coin Sums
