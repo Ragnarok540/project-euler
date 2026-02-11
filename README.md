@@ -40,3 +40,5 @@ Solutions to Project Euler Challenges
 | 0029 Distinct Powers|x| |
 | 0030 Digit Fifth Powers|x| |
 | 0031 Coin Sums| |x|
+| 0032 Pandigital Products|x| |
+| 0033 Digit Cancelling Fractions| | |

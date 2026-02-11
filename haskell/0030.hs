@@ -11,9 +11,6 @@
 
 import Data.Char (digitToInt)
 
-intListToInt :: [Int] -> Int
-intListToInt ls = read $ concat $ map show ls :: Int
-
 intToIntList :: Int -> [Int]
 intToIntList num = map digitToInt $ show num
 

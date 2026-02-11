@@ -137,3 +137,7 @@ memoized_fib =
 
 intListToInt :: [Integer] -> Integer
 intListToInt ls = read $ concat $ map show ls :: Integer
+
+slice :: Int -> Int -> [a] -> [a]
+slice start len ls =
+    take len $ drop start ls
