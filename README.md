@@ -42,7 +42,8 @@ Solutions to Project Euler Challenges
 | 0031 Coin Sums| |x|
 | 0032 Pandigital Products|x| |
 | 0033 Digit Cancelling Fractions|x| |
-| 0034 Digit Factorials| | |
+| 0034 Digit Factorials|x| |
+| 0035 Circular Primes| | |
 
 
 ## Hey Claude

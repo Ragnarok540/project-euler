@@ -95,6 +95,7 @@ above (a, b) =
     [(a - 1, b - 1), (a - 1, b)]
 
 factorial :: Integer -> Integer
+factorial 0 = 1
 factorial num = foldl (*) 1 [1..num]
 
 choose :: Integer -> Integer -> Integer
