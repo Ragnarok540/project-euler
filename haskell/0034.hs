@@ -4,11 +4,8 @@
 -- factorial of their digits.
 -- Note: As 1! = 1 and 2! = 2 are not sums they are not included.
 
-import Data.Char (digitToInt)
 import Utils (factorial)
-
-intToIntList :: Int -> [Int]
-intToIntList num = map digitToInt $ show num
+import ListUtils (intToIntList)
 
 findCurious :: [Integer]
 findCurious =

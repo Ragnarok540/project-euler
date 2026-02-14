@@ -43,7 +43,8 @@ Solutions to Project Euler Challenges
 | 0032 Pandigital Products|x| |
 | 0033 Digit Cancelling Fractions|x| |
 | 0034 Digit Factorials|x| |
-| 0035 Circular Primes| | |
+| 0035 Circular Primes|x| |
+| 0036 Double-base Palindromes| | |
 
 
 ## Hey Claude
