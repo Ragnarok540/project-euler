@@ -32,7 +32,7 @@ Solutions to Project Euler Challenges
 | 0021 Amicable Numbers|x| |
 | 0022 Names Scores|x| |
 | 0023 Non-Abundant Sums| | |
-| 0024 Lexicographic Permutations|x| |
+| 0024 Lexicographic Permutations|x|x|
 | 0025 1000-digit Fibonacci Number|x| |
 | 0026 Reciprocal Cycles|x| |
 | 0027 Quadratic Primes|x| |
