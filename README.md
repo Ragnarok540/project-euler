@@ -45,7 +45,8 @@ Solutions to Project Euler Challenges
 | 0034 Digit Factorials|x| |
 | 0035 Circular Primes|x| |
 | 0036 Double-base Palindromes|x| |
-| 0037 Truncatable Primes| | |
+| 0037 Truncatable Primes|x| |
+| 0038 Pandigital Multiples| | |
 
 
 ## Hey Claude
