@@ -44,7 +44,8 @@ Solutions to Project Euler Challenges
 | 0033 Digit Cancelling Fractions|x| |
 | 0034 Digit Factorials|x| |
 | 0035 Circular Primes|x| |
-| 0036 Double-base Palindromes| | |
+| 0036 Double-base Palindromes|x| |
+| 0037 Truncatable Primes| | |
 
 
 ## Hey Claude

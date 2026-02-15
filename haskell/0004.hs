@@ -6,11 +6,7 @@
 -- product of two 3-digit numbers.
 
 import Utils
-
-palindromeInt :: Integer -> Bool
-palindromeInt num =
-    let intStr = show num in
-        intStr == reverse intStr
+import NumberUtils (palindromeInt)
 
 pairsThreeDigits :: [(Integer, Integer)]
 pairsThreeDigits = 

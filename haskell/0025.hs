@@ -19,6 +19,9 @@ findFib digits = findFibAux 1 digits where
             num = numDigits fib in
                 if num == digits then index else findFibAux (index + 1) digits
 
+result :: Int
+result = findFib 1000
+
 -- :load 0025.hs
 -- numDigits 354224848179261915075
 -- findFib 1000
