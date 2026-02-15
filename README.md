@@ -17,7 +17,7 @@ Solutions to Project Euler Challenges
 | 0006 Sum Square Difference|x| |
 | 0007 10001st Prime|x| |
 | 0008 Largest Product in a Series|x| |
-| 0009 Special Pythagorean Triplet|x| |
+| 0009 Special Pythagorean Triplet|x|x|
 | 0010 Summation of Primes|x| |
 | 0011 Largest Product in a Grid|x| |
 | 0012 Highly Divisible Triangular Number| | |
@@ -46,8 +46,9 @@ Solutions to Project Euler Challenges
 | 0035 Circular Primes|x| |
 | 0036 Double-base Palindromes|x| |
 | 0037 Truncatable Primes|x| |
-| 0038 Pandigital Multiples| | |
-
+| 0038 Pandigital Multiples|x| |
+| 0039 Integer Right Triangles| |x|
+| 0040 Champernowne's Constant| | |
 
 ## Hey Claude
 
