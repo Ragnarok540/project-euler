@@ -48,7 +48,9 @@ Solutions to Project Euler Challenges
 | 0037 Truncatable Primes|x| |
 | 0038 Pandigital Multiples|x| |
 | 0039 Integer Right Triangles| |x|
-| 0040 Champernowne's Constant| | |
+| 0040 Champernowne's Constant|x| |
+| 0041 Pandigital Prime|x| |
+| 0042 Coded Triangle Numbers| | |
 
 ## Hey Claude
 
