@@ -12,6 +12,10 @@ intListToInt ls = read $ concat $ map show ls
 palindrome :: Eq a => [a] -> Bool
 palindrome ls = ls == reverse ls
 
-getPandigitals :: Integer -> Integer -> [[Integer]]
+getPandigitals :: Integral a => a -> a -> [[a]]
 getPandigitals start end =
     sort $ permutations [start..end]
+
+slice :: Int -> Int -> [a] -> [a]
+slice start len ls =
+    take len $ drop start ls

@@ -51,7 +51,9 @@ Solutions to Project Euler Challenges
 | 0040 Champernowne's Constant|x| |
 | 0041 Pandigital Prime|x| |
 | 0042 Coded Triangle Numbers|x| |
-| 0043 Sub-string Divisibility| | |
+| 0043 Sub-string Divisibility|x| |
+| 0044 Pentagon Numbers| |x|
+| 0045 Triangular, Pentagonal, and Hexagonal| | |
 
 
 ## Hey Claude
