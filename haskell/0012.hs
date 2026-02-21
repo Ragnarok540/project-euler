@@ -16,20 +16,29 @@
 -- What is the value of the first triangle number to have over
 -- five hundred divisors?
 
-import Utils
-import SeqUtils (triangular, triangular2, triangulars)
+import Data.List (group)
+import SeqUtils (triangular2)
+import PrimeUtils (allPrimes, primeFactors2)
 
-findTriangular :: Integer -> Int -> Integer
-findTriangular num target =
-    let tri = triangular2 num
-        lenDiv = length (divisors tri) in
-            if lenDiv > target then tri else findTriangular (num + 1) target
+numDivisors :: [Integer] -> Int
+numDivisors factors =
+    foldl (*) 1 $ map (+ 1) $ map length $ group factors
+
+findTriangular :: Int -> Integer
+findTriangular target =
+    let pr = allPrimes 2 10000 in
+        findTriangularAux pr 1 target where
+            findTriangularAux primes start trgt =
+                let tri = triangular2 start
+                    factors = primeFactors2 primes tri
+                    nd = numDivisors factors in
+                        if nd > trgt then tri else findTriangularAux primes (start + 1) trgt
 
 result :: Integer
-result = findTriangular 1 5
+result = findTriangular 500
 
 -- :load 0012.hs
--- triangular 7
--- take 10 triangulars
--- divisors 28
--- 
+-- triangular2 7
+-- allPrimes 2 30
+-- primeFactors2 (allPrimes 2 30) 36
+-- 76576500

@@ -33,8 +33,8 @@ def hexagonal(num: int) -> int:
     return num * (2 * num - 1)
 
 
-def find_tri_pen_hex(start=2):
-    counter = start
+def find_tri_pen_hex():
+    counter = 1
 
     while True:
         h = hexagonal(counter)
@@ -44,13 +44,16 @@ def find_tri_pen_hex(start=2):
             inv_t = inv_triangular(h)
 
             if inv_t != 0:
-                return (counter, int(inv_p), int(inv_t), h)
+                yield (int(inv_t), int(inv_p), counter, h)
 
         counter += 1
 
 
 if __name__ == "__main__":
-    # print(find_tri_pen_hex())
-    # (143, 165, 285, 40755)
-    print(find_tri_pen_hex(144))
-    # (27693, 31977, 55385, 1533776805)
+    gen = find_tri_pen_hex()
+    print(next(gen))
+    print(next(gen))
+    print(next(gen))
+    # (1, 1, 1, 1)
+    # (285, 165, 143, 40755)
+    # (55385, 31977, 27693, 1533776805)

@@ -20,7 +20,7 @@ Solutions to Project Euler Challenges
 | 0009 Special Pythagorean Triplet|x|x| |
 | 0010 Summation of Primes|x| | |
 | 0011 Largest Product in a Grid|x| | |
-| 0012 Highly Divisible Triangular Number| | | |
+| 0012 Highly Divisible Triangular Number|x| | |
 | 0013 Large Sum|x| | |
 | 0014 Longest Collatz Sequence|x| | |
 | 0015 Lattice Paths|x| | |
@@ -54,7 +54,8 @@ Solutions to Project Euler Challenges
 | 0043 Sub-string Divisibility|x| | |
 | 0044 Pentagon Numbers| |x| |
 | 0045 Triangular, Pentagonal, and Hexagonal| | |x|
-| 0046 Goldbach's Other Conjecture| | | |
+| 0046 Goldbach's Other Conjecture|x| | |
+| 0047 Distinct Primes Factors| | | |
 
 
 ## Hey Claude
