@@ -3,7 +3,7 @@
 -- 2, 3, 5, 7, 11 and 13, we can see that the 6th prime is 13.
 -- What is the 10001st prime number?
 
-import Utils
+import PrimeUtils (primes)
 
 nthPrime :: Int -> Integer
 nthPrime num = last (take num (primes 2))

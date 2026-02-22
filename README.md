@@ -55,8 +55,9 @@ Solutions to Project Euler Challenges
 | 0044 Pentagon Numbers| |x| |
 | 0045 Triangular, Pentagonal, and Hexagonal| | |x|
 | 0046 Goldbach's Other Conjecture|x| | |
-| 0047 Distinct Primes Factors| | | |
-
+| 0047 Distinct Primes Factors|x| | |
+| 0048 Self Powers|x| | |
+| 0049 Prime Permutations| | | |
 
 ## Hey Claude
 

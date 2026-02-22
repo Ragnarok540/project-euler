@@ -9,14 +9,6 @@ evens [] = []
 evens [e] = []
 evens (_ : e : t) = e : (evens t)
 
-isPrime :: Integer -> Bool
-isPrime n = if n < 2 then False else (abs n) > 1 && isNotDivisor 2 where
-    isNotDivisor d = d * d > (abs n) || ((mod (abs n) d) /= 0 && isNotDivisor (d + 1)) 
-
-primes :: Integer -> [Integer]
-primes start =
-    if isPrime start then start : (primes (start + 1)) else primes (start + 1)
-
 intSquareRoot :: Integer -> Integer
 intSquareRoot n = aux n
   where
@@ -24,10 +16,10 @@ intSquareRoot n = aux n
       | x * x > n = aux (x - 1)
       | otherwise = x
 
-ownHead :: [a] -> a
+ownHead :: Num a => [a] -> a
 ownHead (h : _) = h
 
-ownTail :: [a] -> [a]
+ownTail :: Num a => [a] -> [a]
 ownTail (_ : t) = t
 
 (^!) :: Num a => a -> Int -> a
@@ -79,11 +71,6 @@ divisors num = divisorsAux num num where
 
 properDivisorsSum :: Integer -> Integer
 properDivisorsSum num = sum (drop 1 (divisors num))
-
--- triangle funcs
-
--- getElem :: (Int, Int) -> Integer
--- getElem (a, b) = triangle !! a !! b
 
 bellow :: (Int, Int) -> [(Int, Int)]
 bellow (a, b) = [(a + 1, b), (a + 1, b + 1)]

@@ -16,7 +16,8 @@
 -- expression that produces the maximum number of primes for consecutive
 -- values of n, starting with n = 0.
 
-import Utils
+import Utils (cartProd)
+import PrimeUtils (isPrime, primes)
 
 quadForm :: Integer -> Integer
 quadForm n = n^2 + n + 41

@@ -5,7 +5,7 @@
 -- 17, 31, 37, 71, 73, 79 and 97.
 -- How many circular primes are there below one million?
 
-import Utils (isPrime, primes)
+import PrimeUtils (isPrime, primes)
 import ListUtils (intToIntList, intListToInt)
 
 rotate :: Int -> [a] -> [a]

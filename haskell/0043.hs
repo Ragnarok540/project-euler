@@ -14,7 +14,7 @@
 -- Find the sum of all 0 to 9 pandigital numbers with this property.
 
 import ListUtils (intListToInt, getPandigitals, slice)
-import Utils (primes)
+import PrimeUtils (primes)
 
 myPrimes :: [Integer]
 myPrimes = take 7 $ primes 2

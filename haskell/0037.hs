@@ -7,7 +7,7 @@
 -- from left to right and right to left.
 -- NOTE: 2, 3, 4, and 7 are not considered to be truncatable primes.
 
-import Utils (isPrime)
+import PrimeUtils (isPrime)
 import ListUtils (intToIntList, intListToInt)
 
 truncateLeft :: Integer -> [Integer]

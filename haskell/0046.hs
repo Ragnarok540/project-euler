@@ -9,7 +9,8 @@
 -- sum of a prime and twice a square?
 
 import Data.List (sort)
-import Utils (isPrime, primes, removeDups)
+import PrimeUtils (isPrime, primes)
+import Utils (removeDups)
 
 oddComposites :: [Integer]
 oddComposites =
