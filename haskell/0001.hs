@@ -4,7 +4,7 @@
 -- The sum of these multiples is 23.
 -- Find the sum of all the multiples of 3 or 5 below 1000.
 
-import Utils
+import SeqUtils (sequ)
 
 divByThreeOrFive :: Integer -> Bool
 divByThreeOrFive n = (mod n 3) == 0 || (mod n 5) == 0

@@ -1,8 +1,6 @@
 module Utils where
 
-sequ :: (Integer -> Bool) -> Integer -> [Integer]
-sequ func start =
-    if func start then start : (sequ func (start + 1)) else sequ func (start + 1)
+import ListUtils (ownHead)
 
 evens :: [Integer] -> [Integer]
 evens [] = []
@@ -15,12 +13,6 @@ intSquareRoot n = aux n
     aux x
       | x * x > n = aux (x - 1)
       | otherwise = x
-
-ownHead :: Num a => [a] -> a
-ownHead (h : _) = h
-
-ownTail :: Num a => [a] -> [a]
-ownTail (_ : t) = t
 
 (^!) :: Num a => a -> Int -> a
 (^!) x n = x ^ n

@@ -5,7 +5,7 @@
 -- is 3 + 6 + 2 + 8 + 8 + 0 + 0 = 27.
 -- Find the sum of the digits in the number 100!.
 
-import Utils
+import Utils (sumDigits)
 
 result :: Integer
 result = sumDigits (factorial 100)

@@ -7,7 +7,7 @@
 -- Find the value of d < 1000 for which 1/d contains the longest
 -- recurring cycle in its decimal fraction part.
 
-import Utils
+import ListUtils (ownHead)
 
 unitFrac :: (Fractional a) => a -> a
 unitFrac x = 1 / x

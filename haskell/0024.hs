@@ -8,7 +8,7 @@
 -- 4, 5, 6, 7, 8 and 9?
 
 import Data.List (permutations, sort)
-import Utils
+import Utils (intListToInt)
 
 getNthPerm :: Ord a => [a] -> Int -> [a]
 getNthPerm ls nth = (sort $ permutations ls) !! nth

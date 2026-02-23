@@ -57,7 +57,10 @@ Solutions to Project Euler Challenges
 | 0046 Goldbach's Other Conjecture|x| | |
 | 0047 Distinct Primes Factors|x| | |
 | 0048 Self Powers|x| | |
-| 0049 Prime Permutations| | | |
+| 0049 Prime Permutations|x| | |
+| 0050 Consecutive Prime Sum| |x| |
+| 0051 Prime Digit Replacements| | | |
+
 
 ## Hey Claude
 

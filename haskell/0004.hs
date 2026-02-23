@@ -5,7 +5,7 @@
 -- Find the largest palindrome made from the
 -- product of two 3-digit numbers.
 
-import Utils
+import Utils (rangeDown, cartProd2)
 import NumberUtils (palindromeInt)
 
 pairsThreeDigits :: [(Integer, Integer)]

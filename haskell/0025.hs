@@ -7,7 +7,7 @@
 -- What is the index of the first term in the Fibonacci sequence
 -- to contain 1000-digits?
 
-import Utils
+import Utils (memoized_fib)
 
 numDigits :: Integer -> Int
 numDigits num = length $ show num

@@ -9,7 +9,7 @@
 -- If the product of these four fractions is given in its lowest common
 -- terms, find the value of the denominator.
 
-import Utils
+import Utils (cartProd5)
 
 ones :: Integer -> Integer
 ones num = mod num 10

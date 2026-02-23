@@ -2,6 +2,10 @@ module SeqUtils where
 
 import Utils (rangeUp)
 
+sequ :: (Integer -> Bool) -> Integer -> [Integer]
+sequ func start =
+    if func start then start : (sequ func (start + 1)) else sequ func (start + 1)
+
 triangular :: Integer -> Integer
 triangular num = sum (rangeUp 1 1 num)
 

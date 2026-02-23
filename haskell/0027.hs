@@ -35,14 +35,10 @@ getPrimes func =
             let p = func num in
                 if isPrime p then p : getPrimesAux func (num + 1) else []
 
-negateL :: [Integer] -> [Integer]
-negateL [] = []
-negateL (h : t) = negate h : negateL t
-
 getCoefficients :: Integer -> [(Integer, Integer)]
 getCoefficients limit =
     let prs = takeWhile (< limit) (primes 2)
-        negPrs = negateL prs in
+        negPrs = map negate prs in
             cartProd negPrs prs
 
 findCoefficients :: Integer -> [(Int, (Integer, Integer))]

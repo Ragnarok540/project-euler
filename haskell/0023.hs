@@ -15,7 +15,7 @@
 -- Find the sum of all the positive integers which cannot be written as
 -- the sum of two abundant numbers.
 
-import Utils
+import Utils (properDivisorsSum, removeDups, cartProd4)
 import Data.List (sort)
 
 data NumberType = Perfect | Deficient | Abundant deriving (Show, Eq)

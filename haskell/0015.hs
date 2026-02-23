@@ -6,7 +6,7 @@
 
 -- import 
 
-import Utils
+import Utils (choose)
 
 latticePaths :: (Integer, Integer) -> Integer
 latticePaths (n, k) = choose (n + k) n

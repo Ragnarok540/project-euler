@@ -8,7 +8,7 @@
 -- of 284 are 1, 2, 4, 71 and 142; so d(284) = 220.
 -- Evaluate the sum of all the amicable numbers under 10000.
 
-import Utils
+import Utils (properDivisorsSum)
 
 findAmicable :: Integer -> Integer -> [(Integer, Integer)]
 findAmicable num limit =

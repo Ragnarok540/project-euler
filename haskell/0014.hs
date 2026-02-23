@@ -15,7 +15,7 @@
 -- NOTE: Once the chain starts the terms are allowed to go
 -- above one million.
 
-import Utils
+import Utils (rangeUp)
 
 collatz :: Integer -> [Integer]
 collatz start = start : collatzAux start where

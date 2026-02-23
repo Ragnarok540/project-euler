@@ -4,7 +4,8 @@
 -- What is the smallest positive number that is evenly divisible by all
 -- of the numbers from 1 to 20?
 
-import Utils
+import SeqUtils (sequ)
+import ListUtils (ownHead)
 
 evenlyDiv :: Integer -> Integer -> Bool
 evenlyDiv div num =

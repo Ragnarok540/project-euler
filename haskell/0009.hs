@@ -7,7 +7,7 @@
 -- a + b + c = 1000.
 -- Find the product a * b * c.
 
-import Utils
+import Utils (rangeUp, cartProd3)
 
 pairs :: [(Integer, Integer)]
 pairs = 

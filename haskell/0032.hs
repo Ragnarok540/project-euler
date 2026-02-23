@@ -11,7 +11,7 @@
 -- to only include it once in your sum.
 
 import ListUtils (getPandigitals, slice)
-import Utils
+import Utils (intListToInt, removeDups)
 
 pandigitalProducts :: [[Integer]] -> [Integer]
 pandigitalProducts [] = []
