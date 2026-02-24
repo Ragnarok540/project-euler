@@ -4,6 +4,8 @@
 % [20,48,52],[24,45,51],[30,40,50]
 % For which value of p <= 1000, is the number of solutions maximised?
 
+:- include('util.pl').
+
 right_triangle(Sides, Perimeter) :-
     Sides = [A, B, C],
     fd_domain(Sides, 1, Perimeter),
@@ -11,9 +13,6 @@ right_triangle(Sides, Perimeter) :-
     C**2 #= A**2 + B**2,
     A #< B,
     fd_labeling(Sides).
-
-do_list(N, L):-
-    findall(Num, between(1, N, Num), L).
 
 length_perimeter(L, P) :-
     findall(Sides, right_triangle(Sides, P), Bag),

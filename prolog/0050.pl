@@ -8,6 +8,8 @@
 % Which prime, below one-million, can be written as the sum of the
 % most consecutive primes?
 
+:- include('util.pl').
+
 primes(Prime, Min, Max) :-
     fd_set_vector_max(1000000),
     fd_domain([Prime, Min, Max], 2, 1000000),
@@ -19,27 +21,9 @@ primes(Prime, Min, Max) :-
 prime_list(PrimeBag, Min, Max) :-
     findall(Prime, primes(Prime, Min, Max), PrimeBag).
 
-subseq([], []).
-subseq([_|Xs], Ys) :-
-    subseq(Xs, Ys).
-subseq([X|Xs], [X|Ys]) :-
-    prefix_subseq(Xs, Ys).
-
-prefix_subseq(_, []).
-prefix_subseq([X|Xs], [X|Ys]) :-
-    prefix_subseq(Xs, Ys).
-
 prime_subseq(SubSeqs, Min, Max) :-
     prime_list(PrimeBag, Min, Max),
     findall(R, subseq(PrimeBag, R), SubSeqs).
-
-include(_Goal, [], []).
-include(Goal, [Head|Tail], Included) :-
-    include(Goal, Tail, IncludedSoFar),
-    ( call(Goal, Head)
-    -> Included = [Head|IncludedSoFar]
-    ; Included = IncludedSoFar
-    ).
 
 list_pair(Ls, L-Ls) :-
     length(Ls, L).
