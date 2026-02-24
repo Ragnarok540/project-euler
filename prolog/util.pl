@@ -1,6 +1,10 @@
 do_list(N, L):-
     findall(Num, between(1, N, Num), L).
 
+do_list(Goal, Length, List) :-
+    do_list(Length, Nums),
+    maplist(Goal, Nums, List).
+
 % do_list(10, List).
 
 include(_Goal, [], []).
@@ -13,6 +17,9 @@ include(Goal, [Head|Tail], Included) :-
 
 is_odd(I) :-
     0 =\= I mod 2.
+
+is_even(I) :-
+    0 =:= I mod 2.
 
 % include(is_odd, [1,2,3,4,5,6], Result).
 
