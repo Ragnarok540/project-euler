@@ -14,7 +14,7 @@ Solutions to Project Euler Challenges
 | 0003 Largest Prime Factor|x| | |
 | 0004 Largest Palindrome Product|x| | |
 | 0005 Smallest Multiple|x| | |
-| 0006 Sum Square Difference|x| | |
+| 0006 Sum Square Difference|x|x| |
 | 0007 10001st Prime|x| | |
 | 0008 Largest Product in a Series|x| | |
 | 0009 Special Pythagorean Triplet|x|x| |
@@ -31,7 +31,7 @@ Solutions to Project Euler Challenges
 | 0020 Factorial Digit Sum|x| | |
 | 0021 Amicable Numbers|x| | |
 | 0022 Names Scores|x| | |
-| 0023 Non-Abundant Sums| | | |
+| 0023 Non-Abundant Sums| | |x|
 | 0024 Lexicographic Permutations|x|x| |
 | 0025 1000-digit Fibonacci Number|x| | |
 | 0026 Reciprocal Cycles|x| | |

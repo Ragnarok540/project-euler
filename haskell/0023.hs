@@ -34,35 +34,9 @@ findAbundant num limit =
         if t == Abundant then num : findAbundant (num + 1) limit
         else findAbundant (num + 1) limit
 
-abundantPairs :: Integer -> [(Integer, Integer)]
-abundantPairs limit = 
-    let fa = findAbundant 1 limit in
-        cartProd4 fa fa
-
-sumPairs :: [(Integer, Integer)] -> [(Integer)]
-sumPairs [] = []
-sumPairs (h : t) =
-    let (a, b) = h in
-        a + b : sumPairs t
-
-sumNonAbundant :: Integer -> Integer
-sumNonAbundant limit =
-    let abundants = filter (< limit) $ sort $ removeDups $ sumPairs $ abundantPairs limit in
-        sumNonAbundantAux 1 limit abundants where
-            sumNonAbundantAux num limit ab =
-                if num >= limit then 0 else
-                if (elem num ab) then sumNonAbundantAux (num + 1) limit ab
-                else num + sumNonAbundantAux (num + 1) limit ab
-
-
-result :: Integer
-result = sumNonAbundant 3000
-
 -- :load 0023.hs
 -- properDivisorsSum 28
 -- numType 6
 -- numType 28
 -- findAbundant 1 100
 -- findAbundant 1 28123
--- abundantPairs 100
--- removeDups $ sumPairs $ abundantPairs 100

@@ -34,3 +34,5 @@ prefix_subseq([X|Xs], [X|Ys]) :-
     prefix_subseq(Xs, Ys).
 
 % subseq([2,3,5,7], Result).
+
+evaluate(X, R):- R is X.

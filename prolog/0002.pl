@@ -20,8 +20,6 @@ fibonacci_list(Length, List) :-
     do_list(Length, Nums),
     maplist(fibonacci, Nums, List).
 
-evaluate(X, R):- R is X.
-
 golden(Golden) :-
     Golden = 1/2 * (1 + sqrt(5)).
 
@@ -35,9 +33,6 @@ start(FibSum) :-
     include(is_even, FibList, FibList2),
     sum_list(FibList2, FibSum).
 
-% setenv GLOBALSZ 1048564
-% setenv LOCALSZ 524282
-% setenv TRAILSZ 262141
 % gprolog
 % ['0002'].
 % do_list(fibonacci2, 33, List).
