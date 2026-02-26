@@ -60,6 +60,9 @@ Solutions to Project Euler Challenges
 | 0049 Prime Permutations|x| | |
 | 0050 Consecutive Prime Sum| |x| |
 | 0051 Prime Digit Replacements| | | |
+| 0052 Permuted Multiples|x| | |
+| 0053 Combinatoric Selections|x| | |
+| 0054 Poker Hands| | | |
 
 
 ## Hey Claude

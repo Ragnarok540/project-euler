@@ -9,14 +9,8 @@
 -- What 12-digit number do you form by concatenating the three terms
 -- in this sequence?
 
-import Data.List (permutations)
+import NumberUtils (isPermutation)
 import PrimeUtils (isPrime, allPrimes)
-import ListUtils (intToIntList, intListToInt)
-
-isPermutation :: Integer -> Integer -> Bool
-isPermutation num1 num2 =
-    let perms = map toInteger $ map intListToInt $ permutations $ intToIntList $ fromInteger num1 in
-        elem num2 perms 
 
 addToPrimes :: [Integer] -> Integer -> [(Integer, Integer, Integer)]
 addToPrimes primes num =
