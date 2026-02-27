@@ -63,7 +63,8 @@ Solutions to Project Euler Challenges
 | 0052 Permuted Multiples|x| | |
 | 0053 Combinatoric Selections|x| | |
 | 0054 Poker Hands| | | |
-
+| 0055 Lychrel Numbers|x| | |
+| 0056 Powerful Digit Sum| | | |
 
 ## Hey Claude
 

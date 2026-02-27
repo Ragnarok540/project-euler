@@ -8,7 +8,7 @@
 -- NOTE: 2, 3, 4, and 7 are not considered to be truncatable primes.
 
 import PrimeUtils (isPrime)
-import ListUtils (intToIntList, intListToInt)
+import NumberUtils (reverseNum)
 
 truncateLeft :: Integer -> [Integer]
 truncateLeft num =
@@ -17,11 +17,6 @@ truncateLeft num =
             let d = mod n digit in
                 if d == n then [d] else
                     d : truncateAux n (digit * 10)
-
-reverseNum :: Integer -> Integer
-reverseNum num =
-    let ls = reverse $ intToIntList $ fromIntegral num in
-        toInteger $ intListToInt ls
 
 truncateRight :: Integer -> [Integer]
 truncateRight num =

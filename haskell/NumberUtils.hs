@@ -12,3 +12,6 @@ palindromeInt :: Integer -> Bool
 palindromeInt num =
     let intStr = show num in
         intStr == reverse intStr
+
+reverseNum :: Integer -> Integer
+reverseNum num = read $ reverse $ show num :: Integer
