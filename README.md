@@ -64,7 +64,9 @@ Solutions to Project Euler Challenges
 | 0053 Combinatoric Selections|x| | |
 | 0054 Poker Hands| | | |
 | 0055 Lychrel Numbers|x| | |
-| 0056 Powerful Digit Sum| | | |
+| 0056 Powerful Digit Sum|x| | |
+| 0057 Square Root Convergents|x| | |
+| 0058 Spiral Primes| | | |
 
 ## Hey Claude
 
