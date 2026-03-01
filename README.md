@@ -67,6 +67,8 @@ Solutions to Project Euler Challenges
 | 0056 Powerful Digit Sum|x| | |
 | 0057 Square Root Convergents|x| | |
 | 0058 Spiral Primes| | | |
+| 0059 XOR Decryption|x| | |
+| 0060 Prime Pair Sets| | | |
 
 ## Hey Claude
 

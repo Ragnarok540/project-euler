@@ -10,48 +10,15 @@
 -- What is the sum of the numbers on the diagonals in a 1001 by 1001
 -- spiral formed in the same way?
 
--- https://stackoverflow.com/questions/57569623/coordinates-for-clockwise-outwards-spiral
-
-data Dir = R | D | L | U deriving (Show)
-
-spiralSeq :: Int -> [Dir]
-spiralSeq n = rn R ++ rn D ++ rn1 L ++ rn1 U
-    where rn = replicate n
-          rn1 = replicate (n + 1)
-
-spiral :: [Dir]
-spiral = concatMap spiralSeq [1, 3..]
-
-move :: (Int, Int) -> Dir -> (Int, Int)
-move (x, y) = go
-    where go R = (x + 1, y)
-          go D = (x, y + 1)
-          go L = (x - 1, y)
-          go U = (x, y - 1)
-
-spiralPos :: (Int, Int) -> [(Int, Int)]
-spiralPos start = scanl move start spiral
-
-ulamSpiral :: Int -> [((Int, Int), Int)]
-ulamSpiral size =
-    let center = div (size - 1) 2
-        sizeSq = size ^ 2 in
-        zip (take sizeSq $ spiralPos (center, center)) [1..sizeSq]
-
-sumDiagonals :: Int -> [((Int, Int), Int)] -> Int
-sumDiagonals _ [] = 0
-sumDiagonals size (h : t) =
-    let ((i, j), v) = h in
-        if i == j || i + j == size - 1 then v + sumDiagonals size t
-        else sumDiagonals size t
+import Spiral (ulamSpiral, spiralDiagonals)
 
 result :: Int
-result = sumDiagonals 1001 $ ulamSpiral 1001
+result = sum $ spiralDiagonals 1001 $ ulamSpiral 1001
 
 -- :load 0028.hs
 -- take 9 spiral
 -- take 9 $ spiralPos (2, 2)
 -- sort $ zip (take 25 $ spiralPos (2, 2)) [1..25]
 -- ulamSpiral 5
--- sumDiagonals 5 $ ulamSpiral 5
+-- spiralDiagonals 5 $ ulamSpiral 5
 -- 669171001
