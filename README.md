@@ -69,6 +69,7 @@ Solutions to Project Euler Challenges
 | 0058 Spiral Primes| | | |
 | 0059 XOR Decryption|x| | |
 | 0060 Prime Pair Sets| | | |
+| 0068 Magic 5-gon Ring| |x| |
 
 ## Hey Claude
 
