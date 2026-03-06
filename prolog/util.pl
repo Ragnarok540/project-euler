@@ -23,6 +23,16 @@ is_even(I) :-
 
 % include(is_odd, [1,2,3,4,5,6], Result).
 
+exclude(_Goal, [], []).
+exclude(Goal, [Head|Tail], Included) :-
+    exclude(Goal, Tail, IncludedSoFar),
+    ( call(Goal, Head)
+    -> Included = IncludedSoFar 
+    ; Included = [Head|IncludedSoFar]
+    ).
+
+% exclude(is_odd, [1,2,3,4,5,6], Result).
+
 subseq([], []).
 subseq([_|Xs], Ys) :-
     subseq(Xs, Ys).
