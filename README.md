@@ -74,7 +74,7 @@ Solutions to Project Euler Challenges
 | 0063 Powerful Digit Counts| | | |
 | 0064 Odd Period Square Roots| | |x|
 | 0065 Convergents of e|x| | |
-| 0066 Diophantine Equation| | | |
+| 0066 Diophantine Equation| | |x|
 | 0067 Maximum Path Sum II| | | |
 | 0068 Magic 5-gon Ring| |x| |
 
