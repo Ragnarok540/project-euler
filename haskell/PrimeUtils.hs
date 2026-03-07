@@ -28,3 +28,10 @@ primeFactors2 [] n = if n > 1 then [n] else []
 primeFactors2 (h : t) n =
     if (mod n h) == 0 then h : primeFactors2 (h : t) (div n h)
     else primeFactors2 t n
+
+factors :: [[Integer]]
+factors =
+    let primes = allPrimes 2 1000 in
+        factorsAux primes 2 where
+            factorsAux pr start =
+                primeFactors2 pr start : factorsAux pr (start + 1)

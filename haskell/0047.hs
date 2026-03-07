@@ -12,15 +12,8 @@
 -- prime factors each. What is the first of these numbers?
 
 import ListUtils (slice, ownHead)
-import PrimeUtils (allPrimes, primeFactors2)
+import PrimeUtils (factors)
 import Utils (removeDups)
-
-factors :: [[Integer]]
-factors =
-    let primes = allPrimes 2 1000 in
-        factorsAux primes 2 where
-            factorsAux pr start =
-                primeFactors2 pr start : factorsAux pr (start + 1)
 
 factorWindow :: Int -> Int -> [[Integer]] -> [[[Integer]]]
 factorWindow start size facts =
