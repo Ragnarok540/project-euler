@@ -70,7 +70,7 @@ Solutions to Project Euler Challenges
 | 0059 XOR Decryption|x| | |
 | 0060 Prime Pair Sets| | | |
 | 0061 Cyclical Figurate Numbers| | | |
-| 0062 Cubic Permutations| | | |
+| 0062 Cubic Permutations|x| | |
 | 0063 Powerful Digit Counts| | | |
 | 0064 Odd Period Square Roots| | |x|
 | 0065 Convergents of e|x| | |

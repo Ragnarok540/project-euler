@@ -9,7 +9,7 @@
 -- What 12-digit number do you form by concatenating the three terms
 -- in this sequence?
 
-import NumberUtils (isPermutation)
+import NumberUtils (isPermutation2)
 import PrimeUtils (isPrime, allPrimes)
 
 addToPrimes :: [Integer] -> Integer -> [(Integer, Integer, Integer)]
@@ -24,8 +24,8 @@ result =
                 resultAux [] = []
                 resultAux (h : t) =
                     let (a, b, c) = h
-                        p1 = isPermutation a b
-                        p2 = isPermutation a c
+                        p1 = isPermutation2 a b
+                        p2 = isPermutation2 a c
                         ip1 = isPrime a
                         ip2 = isPrime b
                         ip3 = isPrime c in
