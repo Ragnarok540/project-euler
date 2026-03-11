@@ -29,3 +29,13 @@ palindromeInt num =
 
 reverseNum :: Integer -> Integer
 reverseNum num = read $ reverse $ show num :: Integer
+
+concatNumbers :: (Integer, Integer) -> Integer
+concatNumbers (num1, num2) =
+    let snum1 = show num1
+        snum2 = show num2 in
+            read (snum1 ++ snum2) :: Integer
+
+lastDigits :: Int -> Integer -> Integer
+lastDigits last digits =
+    read $ reverse $ take last $ reverse $ show digits :: Integer

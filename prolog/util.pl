@@ -46,3 +46,9 @@ prefix_subseq([X|Xs], [X|Ys]) :-
 % subseq([2,3,5,7], Result).
 
 evaluate(X, R):- R is X.
+
+count(Goal, List, Count) :-
+    include(Goal, List, Included),
+    length(Included, Count), !.
+
+% count(is_odd, [1,2,3,4,5,6], Count).

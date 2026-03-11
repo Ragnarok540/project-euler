@@ -51,6 +51,9 @@ cartProd4 xs ys = [(x, y) | x <- xs, y <- ys, x <= y]
 cartProd5 :: [Integer] -> [Integer] -> [(Integer, Integer)]
 cartProd5 xs ys = [(x, y) | x <- xs, y <- ys, x < y]
 
+cartProd6 :: [Integer] -> [Integer] -> [(Integer, Integer)]
+cartProd6 xs ys = [(x, y) | x <- xs, y <- ys, x /= y]
+
 getCombs :: Integer -> Integer -> [(Integer, Integer)]
 getCombs start limit =
     let ran = [start..limit] in

@@ -78,6 +78,9 @@ Solutions to Project Euler Challenges
 | 0067 Maximum Path Sum II|x| | |
 | 0068 Magic 5-gon Ring| |x| |
 | 0069 Totient Maximum| | | |
+| 0070 Totient Permutation| | | |
+| 0071 Ordered Fractions| | | |
+| 0097 Large Non-Mersenne Prime|x| | |
 
 ## Hey Claude
 

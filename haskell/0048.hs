@@ -3,13 +3,11 @@
 -- Find the last ten digits of the series,
 -- 1^1 + 2^2  + ... + 1000^1000.
 
+import NumberUtils (lastDigits)
+
 sumSelfPowers :: Integer -> Integer
 sumSelfPowers num =
     sum $ map (\x -> x ^ x) [1..num]
-
-lastDigits :: Int -> Integer -> Integer
-lastDigits last digits =
-    read $ reverse $ take last $ reverse $ show digits :: Integer
 
 result :: Integer
 result = lastDigits 10 $ sumSelfPowers 1000
