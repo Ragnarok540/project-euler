@@ -80,6 +80,7 @@ Solutions to Project Euler Challenges
 | 0069 Totient Maximum| | | |
 | 0070 Totient Permutation| | | |
 | 0071 Ordered Fractions| | | |
+| 0076 Counting Summations| | |x|
 | 0096 Su Doku| |x| |
 | 0097 Large Non-Mersenne Prime|x| | |
 

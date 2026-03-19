@@ -68,3 +68,11 @@ transpose(Matrix, [Row|Rows]) :-
 transpose_1st_col([], [], []).
 transpose_1st_col([[H|T]|Rows], [H|Hs], [T|Ts]) :-
     transpose_1st_col(Rows, Hs, Ts).
+
+foldl(Goal, List, V0, V) :-
+    foldl_(List, Goal, V0, V).
+
+foldl_([], _, V, V).
+foldl_([H|T], Goal, V0, V) :-
+    call(Goal, H, V0, V1),
+    foldl_(T, Goal, V1, V).
