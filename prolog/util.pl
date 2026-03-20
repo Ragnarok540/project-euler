@@ -1,6 +1,9 @@
 do_list(N, L):-
     findall(Num, between(1, N, Num), L).
 
+do_list(S, N, L):-
+    findall(Num, between(S, N, Num), L).
+
 do_list(Goal, Length, List) :-
     do_list(Length, Nums),
     maplist(Goal, Nums, List).
@@ -76,3 +79,24 @@ foldl_([], _, V, V).
 foldl_([H|T], Goal, V0, V) :-
     call(Goal, H, V0, V1),
     foldl_(T, Goal, V1, V).
+
+descending([]) :- !.
+descending([_]) :- !.
+descending([H1, H2|T]) :-
+    H1 #>= H2,
+    descending([H2|T]).
+
+% descending([3, 2, 1]).
+% descending([3, 1, 2]).
+
+sum_vals(X, Y, S) :-
+   S #= X + Y.
+
+list_sum([H|T], S) :-
+    foldl(sum_vals, T, H, S).
+
+% list_sum([1, 2, 3], S).
+
+prime_or_zero(N) :-
+    N #= 0, !;
+    fd_prime(N).
