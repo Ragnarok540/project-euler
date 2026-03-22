@@ -83,6 +83,7 @@ Solutions to Project Euler Challenges
 | 0076 Counting Summations| | |x|
 | 0077 Prime Summations| |x| |
 | 0079 Passcode Derivation| | |x|
+| 0080 Square Root Digital Expansion| | |x|
 | 0096 Su Doku| |x| |
 | 0097 Large Non-Mersenne Prime|x| | |
 
