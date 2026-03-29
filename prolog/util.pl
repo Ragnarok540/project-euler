@@ -89,6 +89,15 @@ descending([H1, H2|T]) :-
 % descending([3, 2, 1]).
 % descending([3, 1, 2]).
 
+ascending([]) :- !.
+ascending([_]) :- !.
+ascending([H1, H2|T]) :-
+    H1 #=< H2,
+    ascending([H2|T]).
+
+% ascending([3, 2, 1]).
+% ascending([1, 2, 3]).
+
 sum_vals(X, Y, S) :-
    S #= X + Y.
 
@@ -97,6 +106,32 @@ list_sum([H|T], S) :-
 
 % list_sum([1, 2, 3], S).
 
-prime_or_zero(N) :-
-    N #= 0, !;
-    fd_prime(N).
+mult_vals(X, Y, M) :-
+   M #= X * Y.
+
+list_mult([H|T], S) :-
+    foldl(mult_vals, T, H, S).
+
+% list_mult([2, 3, 5], M).
+
+num_num_min(X, Y, Min) :-
+    Min #= min(X, Y).
+
+list_min([H|T], Min) :-
+    foldl(num_num_min, T, H, Min).
+
+% list_min([3,1,2], Min).
+
+convlist(_Goal, [], []).
+convlist(Goal, [Head|Tail], Included) :-
+    convlist(Goal, Tail, IncludedSoFar),
+    ( call(Goal, Head, Result)
+    -> Included = [Result|IncludedSoFar]
+    ; Included = IncludedSoFar
+    ).
+
+square(X, Y) :-
+    integer(X),
+    Y is X**2.
+
+% convlist(square, [3, 5, foo, 2], L).

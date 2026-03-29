@@ -85,6 +85,10 @@ factorial :: Integer -> Integer
 factorial 0 = 1
 factorial num = foldl (*) 1 [1..num]
 
+factorial2 :: Int -> Int
+factorial2 0 = 1
+factorial2 num = foldl (*) 1 [1..num]
+
 choose :: Integer -> Integer -> Integer
 choose n k = div (factorial n) ((factorial k) * factorial (n - k))
 

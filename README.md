@@ -80,10 +80,12 @@ Solutions to Project Euler Challenges
 | 0069 Totient Maximum| | | |
 | 0070 Totient Permutation| | | |
 | 0071 Ordered Fractions| | | |
+| 0074 Digit Factorial Chains|x| | |
 | 0076 Counting Summations| | |x|
 | 0077 Prime Summations| |x| |
 | 0079 Passcode Derivation| | |x|
 | 0080 Square Root Digital Expansion| | |x|
+| 0085 Counting Rectangles|x| | |
 | 0092 Square Digit Chains|x| | |
 | 0096 Su Doku| |x| |
 | 0097 Large Non-Mersenne Prime|x| | |
