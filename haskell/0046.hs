@@ -10,7 +10,7 @@
 
 import Data.List (sort)
 import PrimeUtils (isPrime, primes)
-import Utils (removeDups)
+import ListUtils (removeDups)
 
 oddComposites :: [Integer]
 oddComposites =

@@ -9,17 +9,12 @@
 -- What is the largest 1 to 9 pandigital 9-digit number that can be formed
 -- as the concatenated product of an integer with [1, 2, ..., n] where n > 1?
 
-import Utils (removeDups)
-import ListUtils (intToIntList)
+import ListUtils (is19Pandigital)
+import NumberUtils (lastDigits)
 
 concatenatedProduct :: Int -> [Int] -> Int
 concatenatedProduct num ls =
     read $ concat $ map show $ map (* num) ls :: Int
-
-is19Pandigital :: Int -> Bool
-is19Pandigital num =
-    let observed = sum $ removeDups $ intToIntList num in
-        observed == 45
 
 findPandigital :: Int -> Int
 findPandigital start =

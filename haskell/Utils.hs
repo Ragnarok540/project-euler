@@ -111,13 +111,6 @@ sumDigits num =
     let nums = map digitToInt (show num) in
         sum nums
 
-removeDups :: Eq a => [a] -> [a]
-removeDups = rdHelper []
-    where rdHelper seen [] = seen
-          rdHelper seen (x:xs)
-              | x `elem` seen = rdHelper seen xs
-              | otherwise = rdHelper (seen ++ [x]) xs
-
 slow_fib :: Int -> Integer
 slow_fib 0 = 0
 slow_fib 1 = 1

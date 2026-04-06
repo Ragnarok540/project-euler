@@ -10,8 +10,8 @@
 -- HINT: Some products can be obtained in more than one way so be sure
 -- to only include it once in your sum.
 
-import ListUtils (getPandigitals, slice)
-import Utils (intListToInt, removeDups)
+import ListUtils (getPandigitals, slice, removeDups)
+import Utils (intListToInt)
 
 pandigitalProducts :: [[Integer]] -> [Integer]
 pandigitalProducts [] = []

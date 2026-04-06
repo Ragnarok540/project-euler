@@ -9,92 +9,97 @@ Solutions to Project Euler Challenges
 
 |Problem|Haskell|Prolog|Python|
 |-------|-------|------|------|
-| 0001 Multiples of 3 or 5|x|x| |
-| 0002 Even Fibonacci Numbers|x|x| |
-| 0003 Largest Prime Factor|x| | |
-| 0004 Largest Palindrome Product|x| | |
-| 0005 Smallest Multiple|x| | |
-| 0006 Sum Square Difference|x|x| |
-| 0007 10001st Prime|x| | |
-| 0008 Largest Product in a Series|x| | |
-| 0009 Special Pythagorean Triplet|x|x| |
-| 0010 Summation of Primes|x| | |
-| 0011 Largest Product in a Grid|x| | |
-| 0012 Highly Divisible Triangular Number|x| | |
-| 0013 Large Sum|x| | |
-| 0014 Longest Collatz Sequence|x| | |
-| 0015 Lattice Paths|x| | |
-| 0016 Power Digit Sum|x| | |
-| 0017 Number Letter Counts|x| | |
-| 0018 Maximum Path Sum I|x| | |
-| 0019 Counting Sundays|x| | |
-| 0020 Factorial Digit Sum|x| | |
-| 0021 Amicable Numbers|x| | |
-| 0022 Names Scores|x| | |
-| 0023 Non-Abundant Sums| | |x|
-| 0024 Lexicographic Permutations|x|x| |
-| 0025 1000-digit Fibonacci Number|x| | |
-| 0026 Reciprocal Cycles|x| | |
-| 0027 Quadratic Primes|x| | |
-| 0028 Number Spiral Diagonals|x| | |
-| 0029 Distinct Powers|x| | |
-| 0030 Digit Fifth Powers|x| | |
-| 0031 Coin Sums| |x| |
-| 0032 Pandigital Products|x| | |
-| 0033 Digit Cancelling Fractions|x| | |
-| 0034 Digit Factorials|x| | |
-| 0035 Circular Primes|x| | |
-| 0036 Double-base Palindromes|x| | |
-| 0037 Truncatable Primes|x| | |
-| 0038 Pandigital Multiples|x| | |
-| 0039 Integer Right Triangles| |x| |
-| 0040 Champernowne's Constant|x| | |
-| 0041 Pandigital Prime|x| | |
-| 0042 Coded Triangle Numbers|x| | |
-| 0043 Sub-string Divisibility|x| | |
-| 0044 Pentagon Numbers| |x| |
-| 0045 Triangular, Pentagonal, and Hexagonal| | |x|
-| 0046 Goldbach's Other Conjecture|x| | |
-| 0047 Distinct Primes Factors|x| | |
-| 0048 Self Powers|x| | |
-| 0049 Prime Permutations|x| | |
-| 0050 Consecutive Prime Sum| |x| |
+| 0001 Multiples of 3 or 5|✅|✅| |
+| 0002 Even Fibonacci Numbers|✅|✅| |
+| 0003 Largest Prime Factor|✅| | |
+| 0004 Largest Palindrome Product|✅| | |
+| 0005 Smallest Multiple|✅| | |
+| 0006 Sum Square Difference|✅|✅| |
+| 0007 10001st Prime|✅| | |
+| 0008 Largest Product in a Series|✅| | |
+| 0009 Special Pythagorean Triplet|✅|✅| |
+| 0010 Summation of Primes|✅| | |
+| 0011 Largest Product in a Grid|✅| | |
+| 0012 Highly Divisible Triangular Number|✅| | |
+| 0013 Large Sum|✅| | |
+| 0014 Longest Collatz Sequence|✅| | |
+| 0015 Lattice Paths|✅| | |
+| 0016 Power Digit Sum|✅| | |
+| 0017 Number Letter Counts|✅| | |
+| 0018 Maximum Path Sum I|✅| | |
+| 0019 Counting Sundays|✅| | |
+| 0020 Factorial Digit Sum|✅| | |
+| 0021 Amicable Numbers|✅| | |
+| 0022 Names Scores|✅| | |
+| 0023 Non-Abundant Sums|⚠️| |✅|
+| 0024 Lexicographic Permutations|✅|✅| |
+| 0025 1000-digit Fibonacci Number|✅| | |
+| 0026 Reciprocal Cycles|✅| | |
+| 0027 Quadratic Primes|✅| | |
+| 0028 Number Spiral Diagonals|✅| | |
+| 0029 Distinct Powers|✅| | |
+| 0030 Digit Fifth Powers|✅| | |
+| 0031 Coin Sums|⚠️|✅| |
+| 0032 Pandigital Products|✅| | |
+| 0033 Digit Cancelling Fractions|✅| | |
+| 0034 Digit Factorials|✅| | |
+| 0035 Circular Primes|✅| | |
+| 0036 Double-base Palindromes|✅| | |
+| 0037 Truncatable Primes|✅| | |
+| 0038 Pandigital Multiples|✅| | |
+| 0039 Integer Right Triangles| |✅| |
+| 0040 Champernowne's Constant|✅| | |
+| 0041 Pandigital Prime|✅| | |
+| 0042 Coded Triangle Numbers|✅| | |
+| 0043 Sub-string Divisibility|✅| | |
+| 0044 Pentagon Numbers| |✅| |
+| 0045 Triangular, Pentagonal, and Hexagonal| | |✅|
+| 0046 Goldbach's Other Conjecture|✅| | |
+| 0047 Distinct Primes Factors|✅| | |
+| 0048 Self Powers|✅| | |
+| 0049 Prime Permutations|✅| | |
+| 0050 Consecutive Prime Sum| |✅| |
 | 0051 Prime Digit Replacements| | | |
-| 0052 Permuted Multiples|x| | |
-| 0053 Combinatoric Selections|x| | |
+| 0052 Permuted Multiples|✅| | |
+| 0053 Combinatoric Selections|✅| | |
 | 0054 Poker Hands| | | |
-| 0055 Lychrel Numbers|x| | |
-| 0056 Powerful Digit Sum|x| | |
-| 0057 Square Root Convergents|x| | |
+| 0055 Lychrel Numbers|✅| | |
+| 0056 Powerful Digit Sum|✅| | |
+| 0057 Square Root Convergents|✅| | |
 | 0058 Spiral Primes| | | |
-| 0059 XOR Decryption|x| | |
-| 0060 Prime Pair Sets| | | |
-| 0061 Cyclical Figurate Numbers| | | |
-| 0062 Cubic Permutations|x| | |
+| 0059 XOR Decryption|✅| | |
+| 0060 Prime Pair Sets|⚠️| | |
+| 0061 Cyclical Figurate Numbers| |⚠️| |
+| 0062 Cubic Permutations|✅| | |
 | 0063 Powerful Digit Counts| | | |
-| 0064 Odd Period Square Roots| | |x|
-| 0065 Convergents of e|x| | |
-| 0066 Diophantine Equation| | |x|
-| 0067 Maximum Path Sum II|x| | |
-| 0068 Magic 5-gon Ring| |x| |
-| 0069 Totient Maximum| | | |
+| 0064 Odd Period Square Roots| | |✅|
+| 0065 Convergents of e|✅| | |
+| 0066 Diophantine Equation| | |✅|
+| 0067 Maximum Path Sum II|✅| | |
+| 0068 Magic 5-gon Ring| |✅| |
+| 0069 Totient Maximum|⚠️| | |
 | 0070 Totient Permutation| | | |
-| 0071 Ordered Fractions| | | |
+| 0071 Ordered Fractions|⚠️| | |
 | 0072 Counting Fractions| | | |
 | 0073 Counting Fractions in a Range| | | |
-| 0074 Digit Factorial Chains|x| | |
-| 0075 Singular Integer Right Triangles| | | |
-| 0076 Counting Summations| | |x|
-| 0077 Prime Summations| |x| |
+| 0074 Digit Factorial Chains|✅| | |
+| 0075 Singular Integer Right Triangles| |⚠️| |
+| 0076 Counting Summations| | |✅|
+| 0077 Prime Summations| |✅| |
 | 0078 Coin Partitions| | | |
-| 0079 Passcode Derivation| | |x|
-| 0080 Square Root Digital Expansion| | |x|
+| 0079 Passcode Derivation| | |✅|
+| 0080 Square Root Digital Expansion| | |✅|
 | 0081 Path Sum: Two Ways| | | |
-| 0085 Counting Rectangles|x| | |
-| 0092 Square Digit Chains|x| | |
-| 0096 Su Doku| |x| |
-| 0097 Large Non-Mersenne Prime|x| | |
-| 0102 Triangle Containment| | |x|
+| 0085 Counting Rectangles|✅| | |
+| 0087 Prime Power Triples| |⚠️| |
+| 0088 Product-sum Numbers| |⚠️| |
+| 0092 Square Digit Chains|✅| | |
+| 0096 Su Doku| |✅| |
+| 0097 Large Non-Mersenne Prime|✅| | |
+| 0102 Triangle Containment| | |✅|
+| 0103 Special Subset Sums: Optimum| |⚠️| |
+| 0104 Pandigital Fibonacci Ends|✅| | |
+| 0108 Diophantine Reciprocals I| |⚠️| |
 
 ## Hey Claude
 

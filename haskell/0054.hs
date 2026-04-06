@@ -43,8 +43,8 @@
 
 import Data.List (sort)
 import Data.Maybe (isJust)
-import Utils (cartProd, removeDups)
-import ListUtils (intListToInt)
+import Utils (cartProd)
+import ListUtils (intListToInt, removeDups)
 
 tests :: [[String]]
 tests = [["5H", "5C", "6S", "7S", "KD", "2C", "3S", "8S", "8D", "TD"],

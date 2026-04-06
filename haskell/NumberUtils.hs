@@ -1,8 +1,7 @@
 module NumberUtils where
 
 import Data.List (permutations, sort)
-import ListUtils (intToIntList, intListToInt)
-import Utils (removeDups)
+import ListUtils (intToIntList, intListToInt, removeDups)
 
 getLength :: Integer -> Int
 getLength num = length $ show num
@@ -39,3 +38,7 @@ concatNumbers (num1, num2) =
 lastDigits :: Int -> Integer -> Integer
 lastDigits last digits =
     read $ reverse $ take last $ reverse $ show digits :: Integer
+
+firstDigits :: Int -> Integer -> Integer
+firstDigits first digits =
+    read $ take first $ show digits :: Integer

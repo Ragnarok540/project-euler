@@ -11,9 +11,8 @@
 -- Find the first four consecutive integers to have four distinct
 -- prime factors each. What is the first of these numbers?
 
-import ListUtils (slice, ownHead)
+import ListUtils (slice, ownHead, removeDups)
 import PrimeUtils (factors)
-import Utils (removeDups)
 
 factorWindow :: Int -> Int -> [[Integer]] -> [[[Integer]]]
 factorWindow start size facts =

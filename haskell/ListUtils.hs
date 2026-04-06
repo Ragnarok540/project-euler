@@ -25,3 +25,15 @@ getPandigitals start end =
 slice :: Int -> Int -> [a] -> [a]
 slice start len ls =
     take len $ drop start ls
+
+removeDups :: Eq a => [a] -> [a]
+removeDups = rdHelper []
+    where rdHelper seen [] = seen
+          rdHelper seen (x:xs)
+              | x `elem` seen = rdHelper seen xs
+              | otherwise = rdHelper (seen ++ [x]) xs
+
+is19Pandigital :: Int -> Bool
+is19Pandigital num =
+    let observed = sum $ removeDups $ intToIntList num in
+        observed == 45
